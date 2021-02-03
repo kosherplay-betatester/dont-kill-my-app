@@ -26,6 +26,16 @@ To let your app run in the background, make sure settings for your app look like
   <img src="/assets/img/xiaomi/miui12_settings3.jpg">
 </div>
 
+NEW UPDATE 03-01-21
+In order to disable Xiaomi MIUI 12 Ultra Battery-Saver mode (SuperPower Launcher Activity)
+use this command with ADB
+
+adb shell pm uninstall --user 0 com.miui.securityadd
+
+this will remove Ultra Battery-Saver mode completely
+and will help for apps that requires accessibility to remain active for examble Parental Control Apps and etc.
+note that system update may require to run this command again as it may reinstall this package again
+
 ### MIUI 11
 
 To let your app run in the background, make sure settings for your app look like the following:
